@@ -1,6 +1,6 @@
 Feature: repeat
 
-  Scenario: Bootstrap when no prefixes and local name clash should return 400
+  Scenario: run same multipart request many times
     * def resetResult = karate.call('classpath:karate/person/test.feature')
     * def resetResult = karate.call('classpath:karate/person/test.feature')
     * def resetResult = karate.call('classpath:karate/person/test.feature')
