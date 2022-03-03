@@ -15,12 +15,6 @@ public class GreetingController {
 
     private Logger logger = LoggerFactory.getLogger(this.getClass().getName());
 
-    // $ curl localhost:8080/api/hello
-    @GetMapping(value = "/api/hello", produces = "application/txt")
-    public String greet(@RequestParam(required=false, defaultValue = "world") String name) {
-        logger.info("greet() called");
-        return String.format("Hello %s!", name);
-    }
 
     private static final String EXISTING_CONFIGURATION = "existingConfiguration";
     private static final String BASE_IRIFOR_DATA = "baseIRIForData";

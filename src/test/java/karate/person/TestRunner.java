@@ -1,8 +1,8 @@
-package karate;
+package karate.person;
 
 import com.intuit.karate.junit5.Karate;
 
-class KarateTests {
+class TestRunner {
 
     @Karate.Test
     Karate testAll() {
